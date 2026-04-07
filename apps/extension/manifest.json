@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "WeParty for JioHotstar",
+  "version": "0.1.0",
+  "description": "Watch JioHotstar together with synced playback, chat, and voice signaling.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://www.jiohotstar.com/*", "http://localhost:4000/*"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "WeParty",
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.jiohotstar.com/*"],
+      "js": ["src/contentScript.js"]
+    }
+  ]
+}

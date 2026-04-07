@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "WeParty",
+    "slug": "weparty-mobile",
+    "scheme": "weparty",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.weparty.mobile",
+      "permissions": ["RECORD_AUDIO", "INTERNET"]
+    },
+    "extra": {
+      "backendUrl": "http://10.0.2.2:4000",
+      "wsUrl": "ws://10.0.2.2:4000/realtime"
+    }
+  }
+}

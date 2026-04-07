@@ -1,0 +1,19 @@
+{
+  "name": "weparty-app",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "infra:up": "docker compose --env-file .env up -d --build",
+    "infra:down": "docker compose down"
+  },
+  "devDependencies": {
+    "eas-cli": "^18.5.0"
+  }
+}

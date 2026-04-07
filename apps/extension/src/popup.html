@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WeParty</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>WeParty</h1>
+      <input id="apiBaseUrl" placeholder="API URL (http://host:4000)" />
+      <input id="wsUrl" placeholder="WS URL (ws://host:4000/realtime)" />
+      <button id="saveConfig">Save Endpoints</button>
+      <button id="preflight">Run Preflight</button>
+      <input id="inviteUrl" placeholder="Invite URL (weparty://join?...)" />
+      <button id="autoJoin">Auto-Join Invite URL</button>
+      <input id="roomId" placeholder="Room ID" />
+      <input id="inviteToken" placeholder="Invite Token" />
+      <input id="userId" placeholder="User ID" />
+      <button id="connect">Connect</button>
+      <button id="mute">Toggle Mute</button>
+      <section>
+        <h2>Events</h2>
+        <pre id="events"></pre>
+      </section>
+    </main>
+    <script src="./popup.js"></script>
+  </body>
+  </html>

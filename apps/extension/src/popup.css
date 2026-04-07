@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 320px;
+  padding: 12px;
+}
+
+input,
+button {
+  width: 100%;
+  margin: 4px 0;
+  padding: 8px;
+}
+
+pre {
+  max-height: 180px;
+  overflow: auto;
+  background: #111;
+  color: #ddd;
+  padding: 8px;
+}
